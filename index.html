@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Bishh!</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+      background: linear-gradient(270deg, #ffe6f0, #e6f7ff, #fff0f5, #f0fff0);
+      background-size: 800% 800%;
+      animation: backgroundAnimation 20s ease infinite, fadeIn 4s ease;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes backgroundAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 850px;
+      margin: auto;
+      border: 5px solid;
+      border-image: linear-gradient(to right, #ff66a3, #66ccff, #ffcc66, #cc66ff) 1;
+      border-radius: 25px;
+      background: #ffffffcc;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff1493;
+      text-shadow: 2px 2px #ffe6f0;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-100%); }
+      to { transform: translateX(0); }
+    }
+
+    .emoji {
+      display: inline-block;
+      animation: floatEmoji 2s infinite alternate ease-in-out;
+    }
+
+    @keyframes floatEmoji {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+
+    .animated-img {
+      max-width: 200px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+      animation: bounce 2s infinite alternate;
+    }
+.centered-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 200px;
+  border-radius: 20px;
+  animation: bounce 2s infinite alternate;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+}
+@keyframes waddle {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px) rotate(-2deg); }
+  75% { transform: translateX(10px) rotate(2deg); }
+}
+
+.waddling-duck {
+  animation: waddle 2s ease-in-out infinite;
+}
+
+
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-15px); }
+    }
+
+    .message {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .rainbow-text {
+      background: linear-gradient(to right, #ff66a3, #66ccff, #ffcc66, #cc66ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    .surprise {
+      margin-top: 30px;
+    }
+
+    .surprise-btn {
+      background: linear-gradient(45deg, #ff66a3, #ff1493);
+      box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+      color: white;
+      padding: 15px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .surprise-btn:hover {
+      background-color: #ff3385;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      background: #fff0f5;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+      animation: fadeIn 2s ease;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎶 Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.orangefreesounds.com/wp-content/uploads/2021/08/Happy-birthday-piano.mp3" type="audio/mp3">
+    
+  </audio>
+
+  <div class="container">
+    <h1><span class="emoji">🎉</span> Happy Birthday, Bishh! <span class="emoji">🎉</span></h1>
+
+    <!-- 🎂 Cake Image -->
+    <img src="https://img.freepik.com/premium-vector/cartoon-illustration-cute-happy-birthday-cake-with-party-hat-fruit_150234-82042.jpg?w=360">
+
+    <p class="message">Wishing you all the happiness in the world! 🎂🥳</p>
+    <p class="message">May your day be filled with love, laughter, and joy! 💖</p>
+
+    <!-- 🐥 Duck Image -->
+    <img src="https://img.freepik.com/premium-photo/cartoon-duck-with-birthday-hat-balloons-sitting-ground-generative-ai_900321-61518.jpg
+"alt="Cute Duck"class="centered-img  floating-duck waddling-duck">
+Quack! Happy Birthday! 🐣💛</p>
+
+    <p class="message rainbow-text">🎈✨ You are truly one of a kind,idiot! ✨🎈</p>
+
+    <div class="surprise">
+      <button class="surprise-btn" onclick="revealSurprise()">Click for a Surprise! 🎁</button>
+      <div id="surpriseMessage" class="hidden">
+        🎈 Surprise! God was really on my side when he gave me a best friend like you. In today's world, it's hard to find a true and caring friend. You mean so much more to me than you think. I'm so scared to lose you; that much I'm attached to you. I hope we will continue our friendship until we see our white hairs, lol. No matter how hard your life turns, remember there will always be a girl who forever supports you and is by your side. Even when situations change and we don't get the chance to stay connected, I'll always be there like a ghost and haunt you forever, hehe. I hope  you can achieve your goals and dreams soon (and take me on a world tour trip, lol, just kidding). Thank you for always being there for me. I'm so grateful to your mom that she gave birth to a responsible, loving, caring best friend. Hehe. Happiest birthday surya. Hehe. 🎈
+      </div>
+    </div>
+  </div>
+
+  <!-- 🎉 Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function revealSurprise() {
+      document.getElementById('surpriseMessage').style.display = 'block';
+
+      // Confetti blast
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+
+</body>
+</html>
